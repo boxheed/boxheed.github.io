@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Canvas Eyes</title>
+</head>
+<body style="background-color: gray">
+    <div id="container"></div> 
+    <script src="./js/three/three.js"></script>
+    <script src="./js/yui/yahoo-dom-event/yahoo-dom-event.js"></script>
+    
+    
+    <script src="./js/three/geometry/primitives/Plane.js"></script> 
+    <script src="./js/three/geometry/primitives/Sphere.js"></script> 
+    <script src="./js/canvaseyes.js"></script> 
+    <script>
+        var canvasEyes = new CanvasEyes("container");
+        canvasEyes.config({height: 500, width: 500, radius:100});
+        canvasEyes.render();
+    </script> 
+    
+</body>
+</html>
